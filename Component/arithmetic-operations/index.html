@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../../style/style.css">
+</head>
+
+<body>
+<a href="/"> < Back </a>
+<h3>Arithmetic Operations</h3>
+
+<input type="text" id="firstNumber" value="">
+<input type="text" id="secondNumber" value="">
+<button onclick="addFunction();">Add</button>
+<button onclick="subtractFunction();">Subtract</button>
+<button onclick="multiplyFunction();">Multiply</button>
+<button onclick="divisionFunction();">Devision</button>
+
+<p id="result"></p>
+
+
+<script>
+
+    function addFunction(){
+        var a = parseInt(document.getElementById("firstNumber").value);
+        var b = parseInt(document.getElementById("secondNumber").value);
+        var c=a+b;
+        document.getElementById("result").innerHTML="Addition is " + c;
+    }
+    function subtractFunction(){
+        var a = parseInt(document.getElementById("firstNumber").value);
+        var b = parseInt(document.getElementById("secondNumber").value);
+        var c=a-b;
+        document.getElementById("result").innerHTML="Subtraction is " + c;
+    }
+    function multiplyFunction(){
+        var a = parseInt(document.getElementById("firstNumber").value);
+        var b = parseInt(document.getElementById("secondNumber").value);
+        var c=a*b;
+        document.getElementById("result").innerHTML="Multiplication is " + c;
+    }
+    function divisionFunction(){
+        var a = parseInt(document.getElementById("firstNumber").value);
+        var b = parseInt(document.getElementById("secondNumber").value);
+        var c=a/b;
+        document.getElementById("result").innerHTML="Division is "+ c;
+    }
+</script>
+
+</body>
+</html>
